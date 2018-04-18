@@ -38,11 +38,10 @@ Table of Contents
 ---------------------------------- */
 body {
   font-family: 'Roboto',Helvetica,Arial,sans-serif !important;
-  overflow-x: -moz-hidde-unscrollable;
+  overflow-x: -moz-hidde-unscrollable !important;
 }
-.container {
-  overflow-y: hidden !important;
-}
+
+
 header {
   margin: 0px;
   top: 0;
