@@ -40,7 +40,9 @@ body {
   font-family: 'Roboto',Helvetica,Arial,sans-serif !important;
   overflow-x: -moz-hidde-unscrollable !important;
 }
-
+html{
+  overflow-x: hidden !important;
+}
 
 header {
   margin: 0px;
