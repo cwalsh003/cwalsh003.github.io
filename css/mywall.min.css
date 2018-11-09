@@ -624,7 +624,8 @@ p.extend-details {
     background-color: #FFF;
     padding: 25px;
     border-radius: 7px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    min-height: 434px;
 }
 
 .title-four {
