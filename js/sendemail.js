@@ -128,7 +128,7 @@ $(document).ready(function(){
 
 
               $("#button").click(function(e){
-                  var URL = 'https://ebhckvgooi.execute-api.us-east-1.amazonaws.com/mail'
+                  var URL = 'https://ebhckvgooi.execute-api.us-east-1.amazonaws.com/mail_no_cors'
                   var data = {
                       name: $("#name").val(),
                       email: $("#email").val(),
