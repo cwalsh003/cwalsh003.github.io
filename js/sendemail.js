@@ -149,7 +149,7 @@ $(document).ready(function(){
                   $("#name").val('');
                   $("#email").val('');
                   $("#message").val('');
-                      createSnackbar( 'Dismiss', data.name);
+                      // createSnackbar( 'Dismiss', data.name);
                }
                else
                {
