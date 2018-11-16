@@ -1,6 +1,35 @@
 
 $(document).ready(function(){
+    let sendButton = document.getElementById('send')
+    sendButton.addEventListener('click', function () {
+        const nameText = document.getElementById('fullName').value;
+        const numberText = document.getElementById('callNumber').value;
+        const messageText = document.getElementById('messageText').value;
+        console.log(nameText, messageText, numberText)
+        const token = 'xoxb-481644144962-481587451379-rfGFvPVEU0rBPpsRDKMzRvGo'
+        const url = encodeURI(`https://slack.com/api/chat.postMessage?token=${token}&channel=CE5QU8W2Z&as_user=false&text=${nameText}, ${numberText}, ${messageText}`)
+        console.log(url)
+        const data = JSON.parse('{"text": "hello"}')
+        $.ajax({
+            url: url,
+            method: "POST",
+            dataType: "json",
+            crossDomain: true,
+            headers: {
+                'Content-Type':'application/json'
+            },
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(data),
+            cache: false,
+            success: function (data) {
 
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+
+            }
+        });
+
+    });
     /* This is a prototype */
     var createSnackbar = (function() {
         // Any snackbar that is already shown

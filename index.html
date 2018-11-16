@@ -56,7 +56,7 @@
 					<div class="myphone"><p class="greynum">+1</p>610.217.4140</div>
 					<!-- Contact hours -->
 					<div class="contacthours">
-						<p class="hourcall">Contact hours</p>
+						<p class="hourcall">Contact Hours</p>
 						<div class="rightcall">
 							<p class="dayscall">Mon - Fri</p>
 							<p class="horario">9:00 - 22:00</p>
@@ -64,6 +64,63 @@
 							<p class="horario">10:00 - 18:00</p>
 						</div>
 					</div>
+					<!-- // Contact hours -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="textmeModal" tabindex="-1" aria-hidden="true" role="dialog" aria-labelledby="modalText" style="display: none;">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+				<h2 class="modal-title getmetelf" id="modalText">Send me a text</h2>
+				</div>
+				<div class="modal-body">
+					<!-- Your phone number -->
+					<!-- Contact hours -->
+					<form class="form-horizontal">
+						<fieldset>
+
+							<!-- Form Name -->
+							<legend></legend>
+
+							<!-- Text input-->
+							<div class="form-group">
+								<label class="col-md-4 control-label" for="textinput">Name</label>
+								<div class="col-md-12">
+									<input id="fullName" name="fullName" type="text" placeholder="Full Name" class="form-control input-md">
+
+								</div>
+							</div>
+
+							<!-- Text input-->
+							<div class="form-group">
+								<label class="col-md-4 control-label" for="callNumber">Number</label>
+								<div class="col-md-12">
+									<input id="callNumber" name="callNumber" type="text" placeholder="Number" class="form-control input-md">
+
+								</div>
+							</div>
+
+							<!-- Textarea -->
+							<div class="form-group">
+								<label class="col-md-4 control-label" for="messageText">Message</label>
+								<div class="col-md-12">
+									<textarea class="form-control" id="messageText" name="messageText"></textarea>
+								</div>
+							</div>
+
+							<!-- Button -->
+							<div class="form-group">
+								<label class="col-md-4 control-label" for="send">Send</label>
+								<div class="col-md-4">
+									<button id="send" name="send" class="btn btn-default" data-dismiss="modal">Send</button>
+								</div>
+							</div>
+
+						</fieldset>
+					</form>
 					<!-- // Contact hours -->
 				</div>
 			</div>
@@ -105,8 +162,11 @@
 			<!-- Menu right - Hidden in small devices -->
 			<div class="nav-extra hidden-xs">
 				<!-- Button Contact Modal -->
+				<a class="callme" href="#" data-toggle="modal" data-target="#textmeModal" style="margin-right: 15px">
+					<span class="glyphicon  glyphicon-comment" aria-hidden="true"></span>
+				</a>
 				<a class="callme" href="#" data-toggle="modal" data-target="#callmeModal">
-					<span class="glyphicon glyphicon glyphicon-earphone call" aria-hidden="true"></span>
+					<span class="glyphicon  glyphicon-earphone call" aria-hidden="true"></span>
 				</a>
 				<!-- Button 'Hire me' -->
 				<a class="hireme button-mywall" data-scroll data-options='{ "easing": "easeOutQuint" }' href="#contacto">Email me now</a>
@@ -552,8 +612,8 @@
 		<!-- Text Portfolio -->
 		<div class="container">
 			<h2 class="title-main">Portfolio.</h2>
-			<p class="text-main">These are some toy JavaScript projects that I have created.
-                All of my other work is proprietary and cannot be shared Contact me to see some of my more extensive projects</p>
+			<p class="text-main">These are some projects that I have created.
+                Most of my other major work is proprietary and cannot be shared Contact me to see some of my more extensive projects</p>
 		</div>
 
 		<!-- Gallery -->
@@ -565,6 +625,14 @@
 				<li class="col-md-4 doblock"><a href="http://codepen.io/cdubb03/pen/dXLZEq" data-imagelightbox="b"target="_blank"><img class="wall-gallery" src="img/simon.png" alt="my item 4" /></a></li>
 				<li class="col-md-4 doblock"><a href="http://codepen.io/cdubb03/pen/pgPJoW" data-imagelightbox="b"target="_blank"><img class="wall-gallery" src="img/timer.png" alt="my item 5" /></a></li>
 				<li class="col-md-4 doblock"><a href="http://codepen.io/cdubb03/pen/Vepqzq" data-imagelightbox="b"target="_blank"><img class="wall-gallery" src="img/calculator.png" alt="my item 6" /></a></li>
+				<li class="col-md-4 doblock"><a href="http://demo-website-003.s3-website-us-east-1.amazonaws.com/" data-imagelightbox="b"target="_blank"><img class="wall-gallery" src="img/wsdot.png" alt="my item 6" /></a></li>
+				<li class="col-md-4 doblock"><a href="https://devpost.com/software/senority" data-imagelightbox="b"target="_blank"><img class="wall-gallery" src="img/seniority.jpg" alt="my item 6" /></a></li>
+				<li class="col-md-4 doblock"><a href="https://devpost.com/software/local-lookout" data-imagelightbox="b"target="_blank"><img class="wall-gallery" src="img/safetyNet.jpg" alt="my item 6" /></a></li>
+				<li class="col-md-4 doblock"><a href="https://devpost.com/software/student-capital" data-imagelightbox="b"target="_blank"><img class="wall-gallery" src="img/studentCapital.jpg" alt="my item 6" /></a></li>
+				<li class="col-md-4 doblock"><a href="https://devpost.com/software/bar-tab" data-imagelightbox="b"target="_blank"><img class="wall-gallery" src="img/barTab.jpg" alt="my item 6" /></a></li>
+				<li class="col-md-4 doblock"><a href="https://devpost.com/software/crop-connect" data-imagelightbox="b"target="_blank"><img class="wall-gallery" src="img/cropConnect.jpg" alt="my item 6" /></a></li>
+
+
 			</ul>
 		</div>
 		<!-- // Gallery -->
@@ -676,5 +744,7 @@
 	<script src="js/imagelightbox.min.js"></script>
 	<!-- Send Email -->
 	<script src="js/sendemail.js"></script>
+
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
 </html>
